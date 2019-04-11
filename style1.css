@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  
+}
+
+/* Style the header */
+.header {
+    background-color: #ABEBC6;
+    padding: 20px;
+    text-align: center;
+}
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Create three  columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 20%;
+    padding: 15px;
+	background-color:#ABEBC6;
+	height:160%
+}
+.column2 {
+    float: left;
+    width: 60%;
+    padding: 15px;
+	background-image:url(p3.jpg);
+	height:160%;
+}
+.column3 {
+    float: left;
+    width: 20%;
+    padding: 15px;
+	background-color:#ABEBC6;
+	height:160%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+/*-----footer------*/
+.footer{
+ background-color: black;
+ color: white;
+
+}
+.footer1 h2{
+	margin: 5px;
+	padding: 8px;
+	font-size: 25px;
+	font-family: "Times New Roman", Times, serif;
+	
+}
+.footer1 a{
+	color: white;
+}
+.footer1 a:hover{
+	color: ;
+}
+
+.footer1 p{
+	margin: 5px;
+	padding-top: 2px;
+	padding-left: 10px;
+	font-size: 24px;
+	font-family: "Times New Roman", Times, serif;
+	
+}
+.footer1 h2{margin: 5px;
+	padding: 5px;
+	border-bottom: 1px solid white;
+	
+	
+}
+/*==========================footer2===========================*/
+.footer2{
+
+	background-color: #e6e6e6;
+	color: black;
+	
+}
+.footer2 p{
+	margin: 8px;
+	padding: 8px;
+	font-size: 16px;
+	font-family: "Times New Roman", Times, serif;
+
+}
+.myframegmap{
+
+    border: 3px solid #f6f5f0;
+    border-radius: 8px;
+    height: 130px;
+    width: 80%;
+    box-shadow: 0px 0px 3px 3px #e7e4dc;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+
+}
+/*-----registration form-----*/
+#form
+{
+	background-color:#58D68D;
+	min-height:600px;
+	padding:5px 40px 40px 40px;
+	
+}
+.registration{
+	font-size:20px;
+	font-family:Agency FB;
+	font-weight:700;
+	border-bottom-style:ridge;;
+}
+.text{
+	height:12px;
+}
+label{
+	font-size:18px;
+}
+.btn-primary{
+	border-radius:0px;
+	padding:10px;
+	width:48%;
+}
+.btn-danger{
+	border-radius:0px;
+	padding:10px;
+	width:48%;
+}

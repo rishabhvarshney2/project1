@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<body onload="generateOTP()">
+<script> 
+  
+// Function to generate OTP 
+function generateOTP() { 
+          
+    // Declare a digits variable  
+    // which stores all digits 
+    var digits = '0123456789'; 
+    let OTP = ''; 
+    for (let i = 0; i < 6; i++ ) { 
+        OTP += digits[Math.floor(Math.random() * 10)]; 
+    } 
+    document.getElementById("otp").innerHTML = OTP; 
+} 
+function verify()
+{
+var otpp=document.forms["RegForm"]["Otpp"];
+if(otpp.value=="")
+{
+alert("Please enter the OTP")
+return false;
+}
+}
+
+
+</script> 
+<div align="center" >Your OTP is :</div> 
+<div id="otp" align="center">
+</div><br>
+<!---<center><input type="text" name="otpp" placeholder="Enter the above OTP"><br><br>
+<button type="button" name="btn" onclick="window.location.href='page3.htm'">Submit</button></center>
+--->
+<form name="RegForm" action="paage.htm" onsubmit="return verify()" method="post">
+<center>
+<input type="text" name="Otpp" placeholder="Enter the above OTP" onkeyup='verify();'>
+<br><br>
+<input type="submit" value="Submit" name="Submit">
+<input type="reset" value="Reset" name="Reset">
+</center>
+</form>
+</body>
+</html>

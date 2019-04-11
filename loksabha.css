@@ -1,0 +1,53 @@
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    height: 500px; /* Should be removed. Only for demonstration */
+}
+
+.column2 {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: 500px; /* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.div1 {
+	margin-top:20px;
+    width: 300px;
+    height: 1140px;
+    border: 2px solid black;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+table, th, td {
+	margin-top:20px;
+    border: 2px solid black;
+	margin-left:20px;
+}
+ .column3 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row3::after {
+    content: "";
+    clear: both;
+    display: table;
+}

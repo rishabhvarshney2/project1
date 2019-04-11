@@ -1,0 +1,23 @@
+.footer{
+    color: black;
+    border-top: 8px solid sage;
+    background-color: #c91d61;
+    background: linear-gradient(20deg,#58D68D,#FAD7A0,#F8C471); /*Change colors as you want*/
+    background-size: 1000% 1000% !important;
+    -webkit-animation: changeColors 30s ease infinite;
+    -moz-animation: changeColors 30s ease infinite;
+    -o-animation: changeColors 30s ease infinite;
+    animation: changeColors 30s ease infinite;
+}
+
+@-webkit-keyframes changeColors {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
